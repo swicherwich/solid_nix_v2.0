@@ -1,6 +1,6 @@
 package com.nix.service;
 
-public interface HasInspiration {
+public interface Inspiration {
 	
 	void hasInspiration();
 }

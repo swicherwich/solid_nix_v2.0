@@ -1,18 +1,17 @@
 package com.nix.data;
 
-import com.nix.data.Idea;
-import com.nix.service.HasInspiration;
+import com.nix.service.Inspiration;
 import com.nix.service.WritingPreparation;
-import com.nix.service.impl.HasInspirationImpl;
+import com.nix.service.impl.InspirationImpl;
 import com.nix.service.impl.WritingPreparationImpl;
 
 public class Writer {
 	
-	private final HasInspiration hasInspiration = new HasInspirationImpl();
+	private final Inspiration inspiration = new InspirationImpl();
 	private final WritingPreparation writingPreparation = new WritingPreparationImpl();
 	
 	public void start(Idea idea) {
-		hasInspiration.hasInspiration();
+		inspiration.hasInspiration();
 		writingPreparation.prepareForAWork();
 		write(idea);
 		writingPreparation.finishTheWork();

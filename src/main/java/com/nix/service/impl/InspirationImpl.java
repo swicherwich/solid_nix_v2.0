@@ -1,9 +1,9 @@
 package com.nix.service.impl;
 
 import com.nix.excetion.InspirationException;
-import com.nix.service.HasInspiration;
+import com.nix.service.Inspiration;
 
-public class HasInspirationImpl implements HasInspiration {
+public class InspirationImpl implements Inspiration {
 	
 	private boolean hasInspiration = true;
 	
