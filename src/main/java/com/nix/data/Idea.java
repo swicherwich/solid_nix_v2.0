@@ -1,3 +1,3 @@
-package com.nix;
+package com.nix.data;
 
 public class Idea { }

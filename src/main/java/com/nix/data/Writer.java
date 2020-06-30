@@ -1,5 +1,6 @@
-package com.nix;
+package com.nix.data;
 
+import com.nix.data.Idea;
 import com.nix.service.HasInspiration;
 import com.nix.service.WritingPreparation;
 import com.nix.service.impl.HasInspirationImpl;
