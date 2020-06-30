@@ -5,8 +5,8 @@ import com.nix.config.impl.JavaConfig;
 import java.lang.reflect.InvocationTargetException;
 
 public class ObjectFactory {
-	private static ObjectFactory instance = new ObjectFactory();
-	private Config config = new JavaConfig("nix.com");
+	private static final ObjectFactory instance = new ObjectFactory();
+	private final Config config = new JavaConfig("nix.com");
 	
 	private ObjectFactory() { }
 	
@@ -14,9 +14,8 @@ public class ObjectFactory {
 		return instance;
 	}
 	
-	public <T> T createObject(Class<T> type) throws NoSuchMethodException,
-	IllegalAccessException, InvocationTargetException, InstantiationException {
-		
+	
+	public <T> T createObject(Class<T> type) throws NoSuchMethodException, IllegalAccessException, InvocationTargetException, InstantiationException {
 		Class<? extends T> classImpl = type;
 		if(type.isInterface()) {
 			classImpl = config.getImplClass(type);

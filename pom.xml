@@ -48,7 +48,7 @@
 					<archive>
 						<manifest>
 							<addClasspath>true</addClasspath>
-							<mainClass>ua.com.alevel.nix.solid.Main</mainClass>
+							<mainClass>com.nix.Main</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
