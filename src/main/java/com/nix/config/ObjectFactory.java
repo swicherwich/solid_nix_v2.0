@@ -6,7 +6,7 @@ import java.lang.reflect.InvocationTargetException;
 
 public class ObjectFactory {
 	private static final ObjectFactory instance = new ObjectFactory();
-	private final Config config = new JavaConfig("nix.com");
+	private final Config config = new JavaConfig("com.nix");
 	
 	private ObjectFactory() { }
 	
