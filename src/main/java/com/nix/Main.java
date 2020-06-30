@@ -6,6 +6,6 @@ import com.nix.data.Writer;
 public class Main {
 	public static void main(String[] args) {
 		Writer writer = new Writer();
-		writer.write(new Idea());
+		writer.start(new Idea());
 	}
 }
